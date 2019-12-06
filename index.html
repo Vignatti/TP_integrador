@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="night">
+<body id=ibody>
 
 <header id="page-header">
     <h1>Mi propio Blog</h1>
@@ -27,9 +27,16 @@
 
 <div class="blogroll">
  <ul>
+ <li>Blogroll</li>
+
   <li><a href="http://www.site.com/">Example Site</a></li>
   <li><a href="http://www.site.com/">Example Site</a></li>
   <li><a href="http://www.site.com/">Example Site</a></li>
+  <li><a href="http://www.site.com/">Example Site</a></li>
+  <li><a href="http://www.site.com/">Example Site</a></li>
+  <li><a href="http://www.site.com/">Example Site</a></li>
+  <li>Blogroll2</li>
+
  </ul>
 </div>
 
@@ -70,21 +77,23 @@
   </footer>
 
   <div id="theme-selector">
-    <button>Tema oscuro</button>
-<script>
-document.getElementById('theme-selector').addEventListener("click", change_class);
-  function change_class() {
-   if (document.getElementByTag("body").className.match(/(?:^|\s)night(?!\S)/)) {
-       document.getElementById('article').className
- ̣}
-   else {
-     document.getElementById('article').className="night";
-   }
-     constructor() {
-     }
-   }, false);
-</script>
+    <button id="boton">Tema oscuro</button>
 </div>
+<script>
+document.getElementById("theme-selector").addEventListener("click", change_class);
+function change_class() {
+if (document.getElementById("ibody").className.match(/(?:^|\s)night(?!\S)/)) {
+       document.getElementById("ibody").className="light";
+       document.getElementById("boton").innerText="Tema Oscuro";
+       }
+  else {
+     document.getElementById("ibody").className="night";
+     document.getElementById("boton").innerText="Tema Claro";
+   }
+
+       }
+</script>
+
 
 </body>
-</html>
+ </html>
