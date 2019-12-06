@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Estandares Web - Software Libre al poder</title>
@@ -8,24 +9,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9">
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
-  <header id="page-header">
+
+<body class="night">
+
+<header id="page-header">
     <h1>Mi propio Blog</h1>
     <h2>Aprendiendo HTML5</h2>
     <nav>
       <ul>
-        <li><a href="http://purecss.io">Pure</a>
-        <li><a href="http://yuilibrary.com">YUI</a>
-      </ul>
+        <li><a href="http://purecss.io" class="post-category-pure">Pure</a>
+        <li><a href="http://yuilibrary.com" class="post-category-yui">YUI</a>
+        <li><a href="http://design.com" class="post-category-design">Desing</a>
+        <li><a href="http://js.com" class="post-category-js">JS</a>
+    </ul>
     </nav>
   </header>
 
+<div class="blogroll">
+ <ul>
+  <li><a href="http://www.site.com/">Example Site</a></li>
+  <li><a href="http://www.site.com/">Example Site</a></li>
+  <li><a href="http://www.site.com/">Example Site</a></li>
+ </ul>
+</div>
+
+
   <article>
     <header>
-      <img width="48" height="48" alt="Reid Burke avatar"     src="reid-avatar.png">
-
+      <img width="48" height="55" alt="María del Caaarmen Vignatti avatar"  src="./vignatti.jpg">
       <h1>Viaje a la JSConf</h1>
-      <p>Por <a href="#" class="post-author">Reid Burke</a> sobre
+      <p>Por <a href="#" class="post-author">Vignatti, María del Carmen</a> sobre
          <a class="post-category post-category-js" href="#">Viajes</a>
       </p>
     </header>
@@ -50,14 +63,28 @@
 
   <footer>
     <ul>
-      <li><a href="http://purecss.io/">About</a></li>
+      <li class="pure-menu"><a href="http://purecss.io/">About</a></li>
       <li><a href="http://twitter.com/yuilibrary/">Twitter</a></li>
       <li><a href="http://github.com/yahoo/pure/">GitHub</a></li>
     </ul>
   </footer>
-  
+
   <div id="theme-selector">
     <button>Tema oscuro</button>
-  </div>
+<script>
+document.getElementById('theme-selector').addEventListener("click", change_class);
+  function change_class() {
+   if (document.getElementByTag("body").className.match(/(?:^|\s)night(?!\S)/)) {
+       document.getElementById('article').className
+ ̣}
+   else {
+     document.getElementById('article').className="night";
+   }
+     constructor() {
+     }
+   }, false);
+</script>
+</div>
+
 </body>
 </html>

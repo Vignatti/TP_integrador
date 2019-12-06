@@ -45,6 +45,21 @@ header {
   font-weight: 300;
 }
 
+
+.blogroll ul {
+position: fixed;
+top: 30%;
+left: 0%;
+width: 150px;
+opacity: 0.5;
+background:rgb(61, 79, 93);
+border:1px solid #48758d;
+border-width:0 1px 1px 1px;
+padding:0;
+}
+.blogroll ul a:hover,{background:#366386;}
+
+
 nav ul {
   list-style: none;
 }
@@ -71,7 +86,7 @@ header li a:focus {
 
 article {
   padding-bottom: 2em;
-  max-width: 900px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -85,7 +100,7 @@ article p {
   color: #444;
   font-family: Georgia, "Cambria", serif;
   line-height: 1.8em;
-  text-align: left;
+  text-align: justify ;
 }
 article header {
   margin: 0;
@@ -175,7 +190,8 @@ a:hover, a:focus {
 
 #theme-selector {
   position: fixed;
-  top: 30%;
-  right: 30%;
-  width: 100px;
+  top: 0%;
+  right: 0%;
+  width: 150px;
+  opacity: 0.5;
 }
